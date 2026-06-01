@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>George Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    </head>
+    <body>
+        <header>
+            <h1>George Cooper</h1>
+        </header>
+
+        <div id="nav"> </div>
+        <script>
+            fetch('partials/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav').innerHTML =data;
+            });
+        </script>
+        <main>
+            
+        </main>
+        <footer>
+            <p>C2026 George Cooper</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>George Portfolio</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    </head>
+    <body>
+        <header>
+            <h1>George Cooper</h1>
+        </header>
+
+        <div id="nav"> </div>
+        <script>
+            fetch('/partials/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav').innerHTML =data;
+            });
+        </script>
+        <main>
+            <section>
+                <h2>Projects</h2>
+                <div class="projects">
+                    <a href="/projects/project1.html">
+                        <div class="project">
+                            <h3>Project 1</h3>
+                            <p>Description of the Project</p>
+                            <img src="/images/guitar.jpg" width="200"> 
+                        </div>
+                    </a>
+                    <a href="/projects/project2.html">
+                        <div class="project">
+                            <h3>Project 2</h3>
+                            <p>Description yadda yadda</p>
+                            <img src="/images/guitar 2.jpg" width="200">
+                        </div>
+                    </a>
+                    <a href="/projects/project3.html">
+                        <div class="project"> 
+                            <h3>Project 3</h3>
+                            <p>Bla bla bla</p>
+                            <img src="/images/guitar 3.jpg" width="200">
+                        </div>
+                    </a>
+                    <a href="/projects/project4.html">
+                        <div class="project">
+                            <h3>Project 4</h3>
+                            <p>Stuff</p>
+                            <img src="/images/guitar 4.jpg" width="200">
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <h1>
+                Favourite Games
+            </h1>
+            <h3>
+                <div id="here">
+                    <ul>
+                        <li>Disco Elysium</li>
+                        <li>Minecraft</li>
+                        <li>Terraria</li>
+                        <li>Outer Wilds</li>
+                    </ul>
+                </div>
+            </h3>
+        </main>
+        <footer>
+            <p>C2026 George Cooper</p>
+        </footer>
+    </body>
+</html>
